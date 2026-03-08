@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     background: light-dark(var(--light-background), var(--dark-background));
     color: light-dark(var(--dark-text), var(--light-text));
@@ -42,7 +42,7 @@ a {
     justify-content: center;
     margin: 2rem;
 
-    > div {
+    >div {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
@@ -53,22 +53,14 @@ a {
         box-shadow: 0 4px 24px var(--faint-shadow);
 
         &.discord {
-            background: light-dark(
-                var(--python-yellow),
-                var(--dark-background)
-            );
-            border: 2px solid
-                light-dark(var(--python-yellow), var(--dark-yellow));
-            color: light-dark(var(--dark-text), var(--light-text));
+            background: light-dark(var(--python-yellow), var(--dark-background));
+            border: 2px solid light-dark(var(--python-yellow), var(--dark-yellow));
+            color: light-dark(var(--dark-text), var(--light-text))
         }
 
         &.github {
-            background: light-dark(
-                var(--light-background),
-                var(--dark-background)
-            );
-            border: 2px solid
-                light-dark(var(--dark-background), var(--light-background));
+            background: light-dark(var(--light-background), var(--dark-background));
+            border: 2px solid light-dark(var(--dark-background), var(--light-background));
         }
 
         h2 {
@@ -118,13 +110,10 @@ a {
     &.discord {
         p a {
             color: light-dark(var(--dark-blue), var(--python-yellow));
-            text-decoration-color: light-dark(
-                var(--python-blue),
-                var(--python-yellow)
-            );
+            text-decoration-color: light-dark(var(--python-blue), var(--python-yellow));
 
             &:visited {
-                color: light-dark(var(--darker-blue), var(--dark-yellow));
+                color: light-dark(var(--darker-blue), var(--dark-yellow))
             }
         }
     }
@@ -132,13 +121,10 @@ a {
     &.github {
         p a {
             color: light-dark(var(--dark-blue), var(--python-yellow));
-            text-decoration-color: light-dark(
-                var(--python-blue),
-                var(--python-yellow)
-            );
+            text-decoration-color: light-dark(var(--python-blue), var(--python-yellow));
 
             &:visited {
-                color: light-dark(var(--darker-blue), var(--dark-yellow));
+                color: light-dark(var(--darker-blue), var(--dark-yellow))
             }
         }
     }
@@ -223,7 +209,7 @@ header {
     transition: transform 0.3s ease;
 }
 
-.theme-dark .theme-toggle > svg {
+.theme-dark .theme-toggle>svg {
     transform: rotate(180deg);
 }
 
@@ -243,7 +229,7 @@ main {
 .meetups h2 {
     margin: 0px;
     font-size: 2rem;
-    color: light-dark(var(--python-blue), var(--python-yellow));
+    color: light-dark(var(--python-blue), var(--python-yellow));;
     text-align: left;
 }
 
@@ -256,6 +242,7 @@ main {
     row-gap: 2rem;
 }
 
+
 .meetup-cell {
     background: light-dark(var(--light-card), var(--dark-card));
     border-radius: 10px;
@@ -266,12 +253,7 @@ main {
     transition: box-shadow 0.2s;
 
     &:hover {
-        box-shadow: 0 4px 20px
-            color-mix(
-                in oklab,
-                light-dark(var(--python-blue), var(--python-yellow)),
-                transparent 50%
-            );
+        box-shadow: 0 4px 20px color-mix(in oklab, light-dark(var(--python-blue), var(--python-yellow)), transparent 50%);
     }
 
     .meetup-header {
@@ -280,18 +262,12 @@ main {
         display: flex;
         column-gap: 1rem;
         align-items: center;
-        text-decoration-color: light-dark(
-            var(--python-blue),
-            var(--python-yellow)
-        );
+        text-decoration-color: light-dark(var(--python-blue), var(--python-yellow));
     }
 
     a {
         color: light-dark(var(--python-blue), var(--python-yellow));
-        text-decoration-color: light-dark(
-            var(--python-blue),
-            var(--python-yellow)
-        );
+        text-decoration-color: light-dark(var(--python-blue), var(--python-yellow));
     }
 }
 
@@ -330,15 +306,15 @@ main {
 .meetup-photo {
     width: 95%;
     height: 120px;
-    max-width: 400px;
     object-fit: cover;
     border-radius: 8px;
-    background: light-dark(var(--light-card), var(--dark-card));
+    background: #e5e5e5;
     margin-top: auto;
     align-self: center;
 }
 
 @media (max-width: 900px) {
+
     .meetup-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -354,7 +330,7 @@ main {
         row-gap: 1rem;
     }
 
-    .promo > div {
+    .promo>div {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
